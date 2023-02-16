@@ -1,0 +1,319 @@
+/* 各个页面相同的样式表 : 头, 尾部 */
+/* 版心 */
+.wrapper {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* 快捷导航 */
+.shortcut {
+  background-color: #333;
+  height: 52px;
+}
+.shortcut img {
+  width: 207px;
+  height: 70px;
+}
+.shortcut ul li {
+  line-height: 52px;
+}
+.shortcut a {
+  color: white;
+  padding: 0 15px;
+  border-right: 1px solid gray;
+  font-size: 14px;
+}
+.shortcut li:nth-child(7) a {
+  border-right: none;
+}
+.shortcut .mobile {
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url(../images/sprites.png);
+  background-position: -160px -70px;
+  /* background-color: #fff; */
+}
+.header {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.header .logo {
+  float: left;
+}
+.header .logo img {
+  width: 207px;
+  height: 70px;
+}
+.header .nav ul li:first-child {
+  margin-left: 20px;
+}
+.header .nav li {
+  float: left;
+  line-height: 70px;
+}
+.header .nav li a {
+  margin: 0 25px;
+  padding-bottom: 8px;
+}
+.header .nav li a:hover {
+  color: #27ba9b;
+  border-bottom: 1px solid #27ba9b;
+}
+.header .search {
+  float: left;
+  width: 172px;
+  height: 28px;
+  margin-top: 24px;
+  margin-left: 50px;
+  border-bottom: 2px solid #e7e7e7;
+}
+.header .search input::placeholder {
+  color: #e7e7e9;
+}
+.header .search .magnifier {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/sprites.png);
+  background-position: -79px -69px;
+}
+.header .cart {
+  position: relative;
+  float: right;
+  margin-top: 28px;
+  margin-right: 19px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../images/sprites.png);
+  background-position: -119px -69px;
+}
+.header .cart span {
+  position: absolute;
+  top: -9px;
+  right: -12px;
+  display: inline-block;
+  background-color: #e26237;
+  width: 20px;
+  height: 15px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: white;
+  text-align: center;
+  line-height: 15px;
+}
+.footer {
+  height: 342px;
+  background-color: #333;
+}
+.footer .top {
+  height: 175px;
+  width: 1300px;
+  margin: 0 auto;
+  line-height: 175px;
+  border-bottom: 2px solid #434343;
+}
+.footer .top li {
+  float: left;
+  color: white;
+  font-size: 28px;
+  margin: 0 121px;
+}
+.footer .top .price {
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  margin-right: 20px;
+  background-image: url(../images/sprites.png);
+  background-position: 0 0;
+  vertical-align: middle;
+}
+.footer .top .deliver {
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  margin-right: 20px;
+  background-image: url(../images/sprites.png);
+  background-position: -65px 0;
+  vertical-align: middle;
+}
+.footer .top .quality {
+  display: inline-block;
+  width: 58px;
+  height: 58px;
+  margin-right: 20px;
+  background-image: url(../images/sprites.png);
+  background-position: -130px 0;
+  vertical-align: middle;
+}
+
+.footer .bottom {
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+}
+.footer .bottom p {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.footer .bottom p a {
+  color: #999;
+  font-size: 14px;
+}
+/* 聯絡我們 */
+.contact {
+  display: flex;
+  color: #999;
+  padding: 60px 0 40px 0;
+}
+.contact dl {
+  flex: 1;
+  text-align: center;
+  height: 190px;
+  border-right: 1px solid #f2f2f2;
+}
+.contact dl div {
+  display: flex;
+  justify-content: center;
+}
+.contact dl div dd:first-child {
+  margin-right: 12px;
+}
+.contact dl:last-child {
+  border-right: none;
+}
+
+.contact dt {
+  padding-bottom: 36px;
+  font-size: 18px;
+}
+.contact dd {
+  /* float: left; */
+  width: 92px;
+  height: 92px;
+  font-size: 12px;
+  border: 1px solid #ededed;
+}
+/* .contact dl:first-child dd:first-child::before */
+.contact .kf::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  margin: 20px 25px 8px 25px;
+  background-image: url(../images/sprites.png);
+  background-position: -245px -70px;
+}
+/* .contact dl:first-child dd:first-child:hover::before  */
+.contact .feedback::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  margin: 20px 25px 8px 25px;
+  background-image: url(../images/sprites.png);
+  background-position: -200px -70px;
+}
+.contact .feedback:hover::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  margin: 20px 25px 8px 25px;
+  background-image: url(../images/sprites.png);
+  background-position: -295px -70px;
+}
+.contact .feedback::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  margin: 20px 25px 8px 25px;
+  background-image: url(../images/sprites.png);
+  background-position: -345px -70px;
+}
+/* .contact dl:nth-child(2) dd:first-child::before  */
+.contact .gzh::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  margin: 20px 25px 8px 25px;
+  background-image: url(../images/sprites.png);
+  background-position: -247px -15px;
+}
+.contact .weibo::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  margin: 20px 25px 8px 25px;
+  background-image: url(../images/sprites.png);
+  background-position: -347px -15px;
+}
+.contact .gzh:hover::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  margin: 20px 25px 8px 25px;
+  background-image: url(../images/sprites.png);
+  background-position: -202px -15px;
+}
+.contact .weibo:hover::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  margin: 20px 25px 8px 25px;
+  background-image: url(../images/sprites.png);
+  background-position: -297px -15px;
+}
+
+.contact .kf:hover::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 30px;
+  margin: 20px 25px 8px 25px;
+  background-image: url(../images/sprites.png);
+  background-position: -200px -70px;
+}
+.contact .code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact .code img {
+  height: 76px;
+}
+.contact .download {
+  font-size: 14px;
+  padding-top: 5px;
+}
+.contact .download a {
+  display: inline-block;
+  padding: 5px 15px;
+  margin-top: 4px;
+  color: white;
+  background-color: #5eb69c;
+  border-radius: 2px;
+}
+.contact .hotline {
+  margin-left: 80px;
+  margin-top: 12px;
+  border: none;
+  height: 25px;
+  width: 150px;
+  font-size: 22px;
+  color: #666;
+}
+.contact .optime {
+  margin-left: 65px;
+  height: 17px;
+  width: 180px;
+  font-size: 15px;
+  border: none;
+}

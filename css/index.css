@@ -1,0 +1,509 @@
+.banner {
+  height: 500px;
+  background-color: #f5f5f5;
+}
+.banner .wrapper {
+  position: relative;
+}
+.banner .aside {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 500px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.banner .aside li {
+  height: 50px;
+  line-height: 50px;
+}
+.banner .aside a {
+  position: relative;
+  padding-left: 36px;
+  padding-right: 19px;
+  color: white;
+  font-size: 16px;
+}
+.banner .aside span {
+  margin-left: 15px;
+  color: white;
+  font-size: 14px;
+}
+.banner .aside a::after {
+  position: absolute;
+  top: 5px;
+  right: -58px;
+  content: '';
+  width: 6px;
+  height: 11px;
+  background-image: url(../images/sprites.png);
+  background-position: -80px -110px;
+}
+.banner .prev,
+.banner .next {
+  position: absolute;
+  top: 228px;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-image: url(../images/sprites.png);
+}
+.banner .prev {
+  left: 260px;
+  background-position: 14px -60px;
+}
+.banner .next {
+  right: 10px;
+  background-position: -23px -60px;
+}
+.banner ol {
+  position: absolute;
+  left: 680px;
+  bottom: 10px;
+}
+
+.banner ol li {
+  float: left;
+  margin-right: 24px;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.banner ol .active {
+  background-color: white;
+}
+
+.goods .hd,
+.recommend .hd,
+.brands .hd,
+.kitchen .hd,
+.topic .hd {
+  position: relative;
+  height: 114px;
+  line-height: 114px;
+}
+.goods .hd h2,
+.recommend .hd h2,
+.brands .hd h2,
+.kitchen .hd h2,
+.topic .hd h2 {
+  height: 114px;
+  font-size: 29px;
+  font-weight: 400;
+  float: left;
+}
+.goods .hd h2 span,
+.recommend .hd h2 span,
+.brands .hd h2 span,
+.kitchen .hd h2 span {
+  margin-left: 34px;
+  font-size: 16px;
+  color: #999;
+}
+
+.goods .hd a,
+.recommend .hd a,
+.brands .hd a,
+.kitchen .hd a,
+.topic .hd a {
+  float: right;
+  margin-right: 25px;
+  font-size: 16px;
+  color: #999;
+}
+.goods .hd a::after,
+.recommend .hd a::after,
+.kitchen .hd a::after,
+.topic .hd a::after {
+  position: absolute;
+  top: 50px;
+  right: 5px;
+
+  content: '';
+  background-image: url(../images/sprites.png);
+  background-position: 0 -110px;
+  width: 7px;
+  height: 13px;
+}
+.goods .bd li,
+.recommend .bd li,
+.brands .bd li,
+.kitchen .bd li {
+  position: relative;
+  float: left;
+  width: 304px;
+  height: 405px;
+  margin-right: 8px;
+  text-align: center;
+  background-color: #f0f9f4;
+}
+.brands .bd li {
+  width: 240px;
+  height: 305px;
+}
+.brands .bd li img {
+  width: 240px;
+  height: 305px;
+}
+
+.recommend .bd li {
+  background-color: white;
+}
+.goods .bd li:nth-child(4n),
+.recommend .bd li:nth-child(4n),
+.brands .bd li:last-child,
+.kitchen .bd li:nth-child(4n) {
+  margin-right: 0px;
+}
+.goods .bd li img,
+.recommend .bd li img,
+.kitchen .bd li img {
+  width: 304px;
+}
+.goods .bd li h3,
+.recommend .bd li h3,
+.brands .bd li h3,
+.kitchen .bd li h3 {
+  margin-top: 20px;
+  margin-bottom: 13px;
+  font-size: 20px;
+  font-weight: 400;
+}
+.recommend .bd li h3 {
+  margin-bottom: 8px;
+}
+.goods .bd li p {
+  font-size: 17px;
+  color: #9a2e1f;
+}
+.recommend .bd li p {
+  font-size: 18px;
+  color: #999;
+}
+.goods .bd li p span,
+.recommend .bd li p span,
+.brands .bd li p span,
+.kitchen .bd li p span {
+  font-size: 23px;
+}
+.goods .bd b,
+.recommend .bd b,
+.brands .bd b,
+.kitchen .bd b {
+  position: absolute;
+  top: 16px;
+  left: 19px;
+  width: 28px;
+  height: 51px;
+  display: inline-block;
+  border: 1px solid #27ba9b;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #27ba9b;
+  line-height: 24px;
+}
+.basic,
+.clothes,
+.kitchen,
+.topic {
+  /* height: 800px; */
+  /* background-color: pink; */
+  margin-top: 34px;
+}
+.basic .top,
+.clothes .top,
+.kitchen .top,
+.topic .top {
+  height: 40px;
+  margin-bottom: 20px;
+}
+.basic .top h2,
+.clothes .top h2,
+.kitchen .top h2,
+.topic .top h2 {
+  height: 40px;
+  float: left;
+  font-size: 29px;
+  font-weight: 400;
+}
+.basic ul,
+.clothes ul,
+.kitchen ul {
+  float: left;
+  list-style: none;
+  margin-left: 590px;
+}
+.clothes ul {
+  margin-left: 500px;
+}
+.basic ul li,
+.clothes ul li,
+.kitchen ul li {
+  float: left;
+}
+/* .basic .top .choices */
+.basic .top a,
+.clothes .top a,
+.kitchen .top a {
+  display: inline-block;
+  height: 23px;
+  line-height: 23px;
+  margin-top: 8px;
+  padding: 0 15px;
+  text-decoration: none;
+  color: #a5a5a5;
+}
+.clothes .top a {
+  padding: 0 10px;
+}
+
+.basic ul li .active,
+.clothes ul li .active,
+.kitchen ul li .active {
+  background-color: #27ba9b;
+  color: white;
+}
+.basic .top .more,
+.clothes .top .more,
+.kitchen .top .more {
+  float: right;
+  padding-right: 26px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 7px;
+  color: #a5a5a5;
+  text-decoration: none;
+}
+.basic .top .more::after,
+.clothes .top .more::after,
+.kitchen .top .more::after {
+  display: inline-block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-image: url(../images/sprites.png);
+  background-position: 8px -106px;
+}
+
+.basic .bottom .left,
+.clothes .bottom .left,
+.kitchen .bottom .left {
+  float: left;
+  background-color: red;
+  height: 610px;
+  width: 240px;
+}
+.basic .bottom .right,
+.clothes .bottom .right,
+.kitchen .bottom .right {
+  float: right;
+  /* height: 600px; */
+  width: 1000px;
+  /* background-color: green; */
+}
+
+.basic .bottom .right .bottom1,
+.clothes .bottom .right .bottom1,
+.kitchen .bottom .right .bottom1 {
+  /* margin-top: 20px; */
+  width: 1000px;
+  height: 270px;
+  /* background-color: gray; */
+}
+.basic .bottom .right .title,
+.clothes .bottom .right .title,
+.kitchen .bottom .right .title {
+  text-align: left;
+}
+.clothes .bottom .right .title {
+  padding-top: 5px;
+}
+.basic .bottom1 ul,
+.clothes .bottom1 ul,
+.kitchen .bottom1 ul {
+  list-style: none;
+  margin-left: 0;
+}
+.basic .bottom1 ul li,
+.clothes .bottom1 ul li,
+.kitchen .bottom1 ul li {
+  float: left;
+  height: 297px;
+  width: 244px;
+  /* background-color: pink; */
+  text-align: center;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+.basic .bottom ul li:nth-child(4n),
+.clothes .bottom ul li:nth-child(4n),
+.kitchen .bottom ul li:nth-child(4n) {
+  margin-right: 0;
+}
+.basic .bottom1 li a,
+.clothes .bottom1 li a,
+.kitchen .bottom1 li a {
+  text-decoration: none;
+}
+.basic .bottom1 li img {
+  width: 223px;
+}
+
+.clothes .bottom1 li img {
+  width: 160px;
+}
+.kitchen .bottom1 li img {
+  width: 160px;
+}
+.basic .bottom1 li h3,
+.clothes .bottom1 li h3,
+.kitchen .bottom1 li h3 {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 0px 22px;
+  line-height: 16px;
+}
+.basic .bottom1 p,
+.clothes .bottom1 p,
+.kitchen .bottom1 p {
+  padding-left: 20px;
+  font-size: 17px;
+  color: #9a2e1f;
+}
+.basic .bottom1 p span,
+.clothes .bottom1 p span,
+.kitchen .bottom1 p span {
+  font-size: 23px;
+}
+.basic .bottom1 li:hover,
+.clothes .bottom1 li:hover,
+.kitchen .bottom1 li:hover {
+  border: 1px solid #27ba9b;
+}
+.brands {
+  background-color: #f5f5f5;
+}
+.brands .bar {
+  float: left;
+  margin-top: 44px;
+  margin-left: 898px;
+}
+.brands .hd .prev,
+.brands .hd .next {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #e2e2e2;
+  background-image: url(../images/sprites.png);
+  background-position: -32px -106px;
+}
+.brands .hd .bar .active {
+  background-color: #27ba9b;
+}
+.brands .hd .next {
+  transform: rotate(180deg);
+}
+
+.brands .hd a {
+  float: left;
+}
+.brands .hd .prev {
+  margin-right: 10px;
+}
+.brands .hd .next {
+  margin-right: 0;
+}
+.kitchen .top a {
+  padding: 0 10px;
+}
+.topic {
+  background-color: #f5f5f5;
+  height: 500px;
+}
+.topic .bottom {
+  display: flex;
+  justify-content: space-between;
+  height: 357px;
+}
+.topic .bottom div {
+  width: 406px;
+}
+.topic .bottom img {
+  width: 406px;
+}
+.topic .bottom .one,
+.topic .bottom .two,
+.topic .bottom .three {
+  position: relative;
+}
+.topic .bottom .one,
+.topic .bottom .two,
+.topic .bottom .three {
+  background-color: white;
+}
+.topic .bottom .title,
+.topic .bottom .small {
+  position: absolute;
+
+  left: 20px;
+}
+.topic .bottom .title {
+  bottom: 110px;
+  color: white;
+  font-size: 22px;
+}
+.topic .bottom .small {
+  bottom: 85px;
+  color: #999;
+  font-size: 19px;
+}
+.topic .bottom .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 406px;
+  height: 287px;
+  background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.3));
+}
+.topic .counts {
+  display: flex;
+  margin-left: 20px;
+  height: 70px;
+  align-items: center;
+  font-size: 16px;
+}
+.topic .counts .like,
+.topic .counts .comments {
+  flex: 1;
+}
+.topic .counts .view {
+  flex: 3;
+}
+.topic .counts .like::before,
+.topic .counts .comments::before,
+.topic .counts .view::before,
+.topic .counts .active::before {
+  content: '';
+  display: inline-block;
+  margin-right: 5px;
+  width: 15px;
+  height: 14px;
+  background-image: url(../images/sprites.png);
+}
+.topic .counts .like::before {
+  background-position: -120px -110px;
+}
+.topic .counts .view::before {
+  background-position: -160px -110px;
+}
+.topic .counts .comments::before {
+  background-position: -200px -110px;
+}
+.topic .counts .active::before {
+  background-position: -240px -110px;
+}

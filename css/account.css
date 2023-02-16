@@ -1,0 +1,301 @@
+.content {
+  background-color: #f5f5f5;
+  min-height: 500px;
+}
+.content .wrapper {
+  display: flex;
+  padding-top: 18px;
+}
+.content .aside {
+  width: 227px;
+  min-height: 500px;
+  margin-right: 18px;
+  margin-bottom: 20px;
+  background-color: white;
+  text-align: center;
+}
+.content .aside .info {
+  padding: 47px 0 32px 0;
+  border-bottom: 1px solid #f4f4f4;
+}
+.content .main {
+  flex: 1;
+  min-height: 132px;
+}
+.content .overview {
+  display: flex;
+  height: 132px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+/* .content .main div */
+
+.content .main .abc {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.content .abc:first-child {
+  border-right: 1px solid #f4f4f4;
+}
+.content .main .abc img {
+  width: 25px;
+  padding-bottom: 10px;
+}
+.content .main .abc span {
+  /* display: inline-block;
+  padding-bottom: 10px; */
+  font-size: 25px;
+  color: #e05e30;
+}
+.content .aside img {
+  width: 100px;
+}
+.content .aside h4 {
+  font-weight: 400;
+  padding: 10px 0;
+}
+.content .aside .vipstatus {
+  position: relative;
+  margin: 0 auto;
+  border-radius: 13px;
+  height: 26px;
+  line-height: 26px;
+  padding-left: 17px;
+  width: 93px;
+  color: white;
+  font-size: 14px;
+  background-image: linear-gradient(264deg, #e05e2f 0%, #ea745e 95%);
+}
+.content .info .vipstatus::before {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  content: '';
+  background-image: url(../images/vip_gold.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 15px;
+  width: 15px;
+}
+.content .list h5 {
+  font-weight: 400;
+  font-size: 18px;
+  padding: 33px 53px 17px 53px;
+  text-align: left;
+}
+
+.content .list ul li a {
+  display: block;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 20px;
+  width: 174px;
+  height: 42px;
+  line-height: 42px;
+  text-align: left;
+  padding-left: 53px;
+}
+.content .list ul li .active {
+  color: #5cb99e;
+}
+.content .list ul li {
+  position: relative;
+}
+.content .list ul li .active::before {
+  position: absolute;
+  top: 20px;
+  left: 38px;
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #5cb99e;
+  border-radius: 50%;
+}
+
+.content .aside .list ul li a:hover {
+  color: #5cb99e;
+}
+.content .aside .list ul li:hover::before {
+  position: absolute;
+  top: 20px;
+  left: 38px;
+  content: '';
+  width: 5px;
+  height: 5px;
+  background-color: #5cb99e;
+  border-radius: 50%;
+}
+
+/* common panel */
+
+.common {
+  background-color: #fff;
+  width: 100%;
+  padding: 28px 20px;
+  margin-bottom: 15px;
+}
+/* my orders */
+.content .orders .panel_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 12px;
+  border-right: none;
+}
+.content .orders .panel_title h5 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.content .orders .panel_title .more {
+  font-size: 16px;
+  color: #999;
+}
+.content .orders .list li {
+  display: flex;
+  width: 100%;
+  height: 127px;
+  /* background-color: pink; */
+  align-items: center;
+  padding: 17px 0 14px 12px;
+  border: 1px solid #f4f4f4;
+  border-top: none;
+}
+/* .content .list {
+  padding: 17px 0 14px 12px;
+} */
+.content .list .goodspic {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+.content .list .goodspic .info {
+  flex: 1;
+  padding-right: 93px;
+  /* 溢出的時候顯示省略號 */
+  /* 因為彈性盒子的尺寸可以被內容撐開，不換行的文字可以撐開這個盒子的尺寸 */
+  width: 0;
+}
+.content .list .goodspic h6 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 400;
+  font-size: 16px;
+}
+.content .list .goodspic p {
+  font-size: 14px;
+  color: #999;
+}
+.content .list .goodspic img {
+  width: 107px;
+}
+.content .list .status {
+  width: 120px;
+  color: #e05e30;
+}
+.content .list .price {
+  width: 200px;
+}
+.content .list .paynow {
+  width: 180px;
+}
+.content .list .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 127px;
+  font-size: 14px;
+  border-left: 1px solid #f4f4f4;
+  border-right: 1px solid #f4f4f4;
+}
+.content .price .gdsprice {
+  color: #9a2e1f;
+}
+.content .paynow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content .paynow .paybtn {
+  display: block;
+  width: 100px;
+  height: 30px;
+  font-size: 12px;
+  background-color: #5eb69c;
+  padding-left: 0;
+  color: white;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 4px;
+}
+.content .paynow .details,
+.content .paynow .cancle {
+  height: 22px;
+  font-size: 12px;
+  line-height: 14px;
+  width: 51px;
+  padding-left: 0;
+}
+.content .paynow .details {
+  margin-top: 15px;
+}
+/* my wishlist & history*/
+.content .wishlist .panel_title,
+.content .history .panel_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f4f4f4;
+  padding-bottom: 12px;
+  border-right: none;
+}
+.content .wishlist .panel_title h5,
+.content .history .panel_title h5 {
+  font-size: 22px;
+  font-weight: 400;
+}
+.content .wishlist .panel_title .more,
+.content .history .panel_title .more {
+  font-size: 16px;
+  color: #999;
+}
+.content .wishlist .product ul,
+.content .history .product ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.content .wishlist .product li,
+.content .history .product li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 180px;
+  height: 260px;
+  margin-right: 10px;
+}
+.content .wishlist .product .pic,
+.content .history .product .pic {
+  margin-left: 12px;
+}
+.content .wishlist .product li img,
+.content .history .product li img {
+  width: 160px;
+}
+.content .wishlist .product h6,
+.content .history .product h6 {
+  margin: 15px 0 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.content .wishlist .product .clprice,
+.content .history .product .clprice {
+  font-size: 22px;
+  color: #9a2e1f;
+}
